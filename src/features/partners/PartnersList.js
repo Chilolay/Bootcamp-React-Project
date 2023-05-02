@@ -19,4 +19,4 @@ const PartnersList = () => {
   )
 }
 
-export default PartnersList
+export default PartnersList;
