@@ -5,6 +5,7 @@ import { ContactPage, HomePage, CampsitesDirectoryPage, CampsiteDetailPage, Abou
 import { Header, Footer } from './components';
 import { fetchCampsites } from './features/campsites/campsitesSlice';
 import { fetchPartners } from './features/partners/partnersSlice';
+import { fetchPromotions } from './features/promotions/promotionsSlice';
 import './App.css';
 
 
@@ -14,6 +15,7 @@ function App() {
   useEffect(() => {
     dispatch(fetchCampsites());
     dispatch(fetchPartners());
+    dispatch(fetchPromotions());
   }, [dispatch]);
 
   return (
